@@ -103,7 +103,7 @@
 
     ```javascript
     //注意"-"后面不能有空格！
-	-  
+	-
 		var obj = {
 			name:"Rufer",
 			sex:"male",
