@@ -1,5 +1,12 @@
 # 页面重构库
 
+使用方法:
+
+1. 下载node [下载node](http://nodejs.cn/download/)
+2. window+r打开命令行，找到本项目根目录
+3. 输入 npm install （如果下载太慢可以选择[淘宝镜像](https://segmentfault.com/n/1330000009480793)）
+4. 输入gulp执行自动化任务。 
+
 ## 项目介绍
 
 本项目目标是为方便所有页面重构工作者进行页面重构。技术栈node+gulp（自动化构建工具）+jade（预编译html）+sass（预编译css）。
