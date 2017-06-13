@@ -10,12 +10,11 @@
 
 @import "function/mixins";//自己整理的辅助mixin比如过渡效果与文本溢出，一些不方便再另起一个类名的样式集合，如页面需要用到则在页面中单独引入！！！
 @import "function/edge";//自己整理的边距样式
-@import "function/function";//自己整理的一些功能类比如图片自适应
 @import "function/variables";//一般是需要的比如写点颜色变量啥的方便
+@import "function/utils";//前人整理的功能类如三角符号
 
 /* 前人整理 */
 
 // @import "function/animate";//前人整理的动画样式看情况要动画就导入
 // @import "function/grid";//前人整理的栅格布局如果有引用相同功能样式表如bootstrap就不要引用
-// @import "function/utils";//前人整理的功能类如三角符号
 // @import "function/normal";//前人整理的css reset
