@@ -1,0 +1,42 @@
+//- 页面通用模板
+
+block variables
+	-var pageTitle;
+	-var pageClass;
+doctype html
+html
+	head
+		meta(http-equiv="Content-Type",content="charset=utf-8")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
+		meta(name="viewport",content="width=device-width, initial-scale=1")
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		title= pageTitle
+		block css-js
+			link(rel="stylesheet", type="text/css",href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css")
+			link(rel="stylesheet", type="text/css",href="css/base.css")
+			block spec-css-js
+
+	//- 导入mixin集合
+	include @mixins-components
+
+	body(class=pageClass)
+		.wrapper
+			block header
+				+_header
+			//- 默认无banner
+			block banner
+			//- 页面主要内容
+			block main
+				h1.ta-c 我是内容部分
+			block footer
+				+_footer
+			block sidebar
+				+_sidebar
+			block pop
+				+_pop
+	block script
+		script(src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js")
+		script(src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		block spec-script
+

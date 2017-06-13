@@ -1,0 +1,65 @@
+//-
+	File Name: 组件-侧边栏
+	Author: Rufer
+	Date: 2017-06-12
+	Description: 侧边栏组件。
+
+//- _tabs-bs与_tab-bs应用方法：
+	-
+		var tab = {
+			cls:"my-tab",
+			nav:[
+					{text:"第1页",href:"1"},
+					{text:"第2页",href:"2"},
+					{text:"第3页",href:"3"},
+					{text:"第4页",href:"4"}
+				],
+			transition:true
+		};
+		
+	+_tabs-bs(tab)
+		block content
+			+_tab-bs(tab,0)
+				p 这是第1页
+			+_tab-bs(tab,1)
+				p 这是第2页
+			+_tab-bs(tab,2)
+				p 这是第3页
+			+_tab-bs(tab,3)
+				p 这是第4页
+
+mixin _tab-bs(tab,i)
+	//- 
+		description:tab组件内容层
+		dependence:bootstrap
+	- var $cls = tab.cls ? tab.cls : "";
+	- var $nav = tab.nav ? tab.nav : [{text:"第1页",href:"1"},{text:"第2页",href:"2"},{text:"第3页",href:"3"}];
+	- var $transition = tab.transition ? tab.transition : false;
+	- var $i = i ? i : 0;
+
+	.tab-pane(role="tabpanel",class=$transition===true?(i===0?"fade in active":"fade"):(i===0?"active":""),id=$nav[$i].href)
+		if block
+			block
+		else 
+			p 这是第#{i+1}页
+
+mixin _tabs-bs(tab)
+	//- 
+		description:tab组件外层
+		dependence：bootstrap
+	- var $cls = tab.cls ? tab.cls : "";
+	- var $nav = tab.nav ? tab.nav : [{text:"第1页",href:"1"},{text:"第2页",href:"2"},{text:"第3页",href:"3"}];
+	- var $transition = tab.transition ? tab.transition : false;
+
+	._tab-bs(class=$cls)
+		._tab-nav
+			block nav-prev
+			ul.nav.nav-tabs(role="tablist")
+				- for item,i in $nav
+					li(role="presentation",class=(i===0?"active":""))
+						a(role="tab",data-toggle="tab",aria-expanded="true",href="#"+item.href,id=item.href+"-tab") #{item.text}
+			block nav-next
+		.tab-content
+			//- - for item,i in $nav
+			//- 	.tab-pane(role="tabpanel",class=$transition===true?(i===0?"fade in active":"fade"):(i===0?"active":""),id=item.href)
+			block content

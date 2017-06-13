@@ -1,0 +1,23 @@
+//- 组件-分页
+
+mixin _paging
+	.page
+		.p-wrap
+			span.p-num
+				a.pn-prev 上一页
+				a 1
+				a.current 2
+				a 3
+				a 4
+				a(href="javascript:void(0);").ellipsis ...
+				a 9
+				a 10
+				a.pn-next 下一页
+			span.p-skip
+				em
+					|共
+					b 74
+					|页  到第
+				input(maxlength="4",value="1").input-txt
+				em 页
+				a(href="javascript:void(0);").btn 确定

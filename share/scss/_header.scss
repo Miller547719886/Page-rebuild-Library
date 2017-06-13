@@ -1,0 +1,61 @@
+/**
+ *  @module 组件-页头样式
+ *  @author Rufer <547719886@qq.com>
+ *  @license GPL-3.0+
+ *  @copyright © 2017 https://github.com/Miller547719886
+ */
+
+/* ********** HEADER ************** */
+
+.header {
+	width: 100%;
+	background-color: #f8f8f8;
+	/*	height: 30px;*/
+}
+
+.header ul li {
+	float: left;
+}
+
+.header .left li {
+	margin-right: 15px;
+}
+
+.header .left li a {
+	color: #939393;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.header .left li a:hover {
+	color: #e62135;
+}
+
+.header .left li a i {
+	font-size: 20px;
+	margin-right: 5px;
+	position: relative;
+	top: 2px;
+}
+
+.header .right li {
+	margin-left: 15px;
+}
+
+.header .right li a {
+	color: #939393;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.header .right li a:hover,
+.header .right li a.on {
+	color: #e62135;
+}
+
+.header .right li a i {
+	font-size: 20px;
+	margin-left: 5px;
+	position: relative;
+	top: 2px;
+}

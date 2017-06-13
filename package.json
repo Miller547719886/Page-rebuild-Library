@@ -1,0 +1,59 @@
+{
+  "name": "japan-e-commerce",
+  "version": "0.1.0",
+  "description": "Japanese electricity supplier website page build",
+  "main": "Japanese electricity supplier website page build",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Miller547719886/japan-e-commerce.git"
+  },
+  "keywords": [
+    "electricity",
+    "supplier"
+  ],
+  "author": "熊煜峰",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Miller547719886/japan-e-commerce/issues"
+  },
+  "homepage": "https://github.com/Miller547719886/japan-e-commerce#readme",
+  "devDependencies": {
+    "compass": "^0.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.4.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^2.0.0",
+    "gulp.spritesmith": "^6.2.1",
+    "gulp.spritesmith-multi": "^3.1.0",
+    "jshint": "^2.9.4",
+    "merge-stream": "^1.0.1",
+    "node-sass": "^4.5.2",
+    "pug": "^2.0.0-rc.2",
+    "require-dir": "^0.3.1",
+    "ruby": "^0.6.1"
+  },
+  "dependencies": {}
+}

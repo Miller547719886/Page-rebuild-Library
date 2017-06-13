@@ -1,0 +1,16 @@
+/**
+ *  @module 组件-页头样式
+ *  @author Rufer <547719886@qq.com>
+ *  @license GPL-3.0+
+ *  @copyright © 2017 https://github.com/Miller547719886
+ */
+
+._header {
+	z-index: 10;
+	position: relative !important;
+	height: 60px;    
+	padding-top: 12px;
+    padding-bottom: 12px;
+	background-color: #24292e;
+	color: rgba(255,255,255,0.75);
+}
